@@ -7,7 +7,7 @@ let wordsEasy=[
   'java',
   'twist',
   'music',
-  /* 'act',
+  'act',
   'arm',
   'grip',
   'grasp',
@@ -16,7 +16,7 @@ let wordsEasy=[
   'lock',
   'verb',
   'truth',
-  'set',*/
+  'set',
   ]
   let normalWord=[
     'paython',
