@@ -1,0 +1,141 @@
+:root{
+  --main-color:#2196f3;
+}
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; 
+}
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.game{
+  width: 100%;
+  min-height: 100vh;
+  background-color: #eee;
+}
+.game .name{
+  padding: 10px;
+  font-weight: bold;
+  font-size: 23px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: var(--main-color)
+}
+.continer{
+  margin: auto;
+  max-width: 900px;
+}
+.message{
+  position: relative;
+  background-color: white;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 6px;
+  text-align: center;
+}
+.message span{
+  color: #0096BB;
+  font-weight: bold;
+}
+.message span:before{
+  content: " [ "
+}
+.message span:after{
+  content: "] "
+}
+#select{
+  color: var(--main-color);
+  
+}
+#select:focus{
+  outline: none;
+}
+.start{
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  background-color: #0096BB;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+.the-word{
+  font-weight: bold;
+  text-align: center ;
+  color: var(--main-color);
+  font-size: 60px;
+  user-select: none;
+  text-align: center;
+}
+.input{
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 6px;
+  border: 3px solid var(--main-color);
+  text-transform: capitalize;
+  display: block;
+  caret-color: var(--main-color);
+  font-size: 20px;
+}
+input:focus{
+  outline: none;
+}
+.upcoming-words{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin: 15px 0;
+}
+.upcoming-words .upword{
+  background-color: var(--main-color);
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  border-radius: 4px;
+}
+.controls{
+  display: flex;
+  justify-content:space-between;
+  padding: 15px;
+  background-color: white;
+}
+ .controls span{
+   font-weight: bold;
+   color: #006096BB;
+ }
+ .finish{
+   font-size: 40px;
+   font-weight: bold;
+   padding: 15px;
+   text-align: center;
+   
+ }
+ .finish .good{
+   color: var(--main-color)
+ }
+ .finish .bad{
+   color: red;
+ }
+ .restart{
+   display: inline-block;
+   padding: 4px;
+   font-size: 17px;
+   border-radius: 4px;
+   cursor: pointer;
+   margin: 15px;
+   background-color: var(--main-color);
+   color: greenyellow;
+ }
+@media (min-width:400px){
+  #select{
+    
+    position: absolute;
+    right: 0px;
+  }
+  
+}
